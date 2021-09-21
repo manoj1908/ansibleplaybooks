@@ -1,0 +1,12 @@
+---
+- hosts: Dev
+  become: true
+  become_user: root
+  vars: 
+    my_tasks: true
+  tasks:
+   - name: postfix package installation
+     yum:
+       name: postfix
+       state: latest
+     when: my_tasks
