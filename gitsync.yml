@@ -1,5 +1,5 @@
 ---
-- hosts: All
+- hosts: all
   tasks:
     - name: Apache Installation
       yum:
